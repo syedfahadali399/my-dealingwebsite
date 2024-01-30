@@ -1,0 +1,370 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    padding: 50px;
+    text-align: center;
+    background-color: dodgerblue;
+    color: white;
+    top: 0;
+}
+
+@media screen and (max-width: 430px) {
+    .header{
+        width: 125vw;
+    }
+}
+
+footer , nav{
+    display: flex;
+    background-color: black;
+}
+
+@media screen and (max-width: 430px) {
+    .nav{
+        width: 125vw;
+    }
+}
+
+footer a, nav a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    float: left;
+    text-align: center;
+}
+
+main{
+    flex: 100%;
+    background-color: white;
+}
+
+section{
+    text-align: center;
+   padding-top: 40px;
+}
+
+@media screen and (max-width: 430px) {
+    .sec{
+        width: 125vw;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .sec1{
+        width: 125vw;
+    }
+}
+
+iframe{
+    padding: 0px 5px;
+}
+
+img{
+    padding: 0px 20px 0px 20px;
+}
+
+h2{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding-bottom: 40px;
+    color: black;
+    text-decoration: double;
+}
+
+@keyframes fahad {
+    from{
+        background-color: rgb(38, 0, 253);
+    }
+    to{
+        background-color: #1299bb;
+    }
+    
+}
+
+.img1{
+    border-radius: 50px;
+}
+
+.video span{
+    animation: fahad 2s ease-in-out 1s infinite alternate-reverse;
+    padding: 10px 55px;
+    border-radius: 20px;
+    color: white;
+    box-shadow: 10px 5px 5px rgb(179, 255, 0);
+    cursor: pointer;
+}
+
+.review span{
+    animation: fahad 2s ease-in-out 1s infinite alternate-reverse;
+    padding: 10px 55px;
+    border-radius: 20px;
+    color: white;
+    box-shadow: 10px 5px 5px rgb(179, 255, 0);
+    cursor: pointer;
+}
+
+.category span{
+    animation: fahad 2s ease-in-out 1s infinite alternate-reverse;
+    padding: 10px 55px;
+    border-radius: 20px;
+    color: white;
+    box-shadow: 10px 5px 5px rgb(179, 255, 0);
+    cursor: pointer;
+}
+
+.collection span{
+    animation: fahad 2s ease-in-out 1s infinite alternate-reverse;
+    padding: 10px 55px;
+    border-radius: 20px;
+    color: white;
+    box-shadow: 10px 5px 5px rgb(179, 255, 0);
+    cursor: pointer;
+}
+
+.founder span{
+    animation: fahad 2s ease-in-out 1s infinite alternate-reverse;
+    padding: 10px 55px;
+    border-radius: 20px;
+    color: white;
+    box-shadow: 10px 5px 5px rgb(179, 255, 0);
+    cursor: pointer;
+}
+
+p{
+    animation: slidein 0.5s ease 0.2s infinite alternate both;
+    background-color: #2424af;
+    border-radius: 90px;
+    display: inline-block;
+    color: white;
+    cursor: pointer;
+    font-size: 1.75em;
+    font-weight: 500;
+    letter-spacing: 0.7em;
+    padding: 1em 2em 1.1em;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    vertical-align: top;
+    margin-top: 100px;
+}
+
+@keyframes slidein {
+    0% {
+        bottom: 0;
+        box-shadow: 0 0 5px rgba(0,0,0,0.5);
+    }
+
+    100% {
+        bottom: 50px;
+        box-shadow: 0 50px 50px rgba(0,0,0,0.1); 
+    }
+}
+
+.menu-btn:hover{
+    background-color: #ddd;
+    color: black;
+}
+
+.carousel-cell {
+    width: 66%;
+    margin-right: 10px;
+    border-radius: 5px;
+  }
+
+.carousel-cell video{
+    max-width: 100%;
+}
+
+.carousel-cell img{
+    max-width: 100%;
+}
+
+
+@media screen and (max-width: 700px){
+   footer , nav{
+        flex-direction: column;
+        padding: 10px 0px;
+    }
+
+    .flex-align-right{
+        margin-left: 0;
+    }
+}
+
+h3{
+    text-align: center;
+    font-family: cursive;
+}
+
+.img{
+    border-radius: 111px;
+    margin: 32px;
+}
+
+.grid-container{
+    /* display: grid;
+    grid-template-columns: auto auto auto; */
+    padding: 25px;
+    justify-content: center;
+    gap: 5%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.ol{
+    color: blue;
+    font-style: italic;
+    font-weight: 900;
+    text-align: left;
+    list-style-type: circle;
+    cursor: pointer;
+    /* position: relative;
+    right: 110px; */
+}
+
+.a{
+    border: none;
+    border-radius: 24px;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    padding: 10px 40px;
+    text-decoration: none;
+    animation: fahad3 2s ease-in-out 1s infinite alternate-reverse;
+}
+
+.input{
+    animation: fahad2 2s ease-in-out 1s infinite alternate-reverse;
+    color: rgb(255, 255, 255);
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 300px;
+    text-align: center;
+    margin: 10px;
+    border-radius: 24px;
+}
+
+@keyframes fahad2 {
+    from{
+        background-color: #133b85;
+    }
+    to{
+        background-color: rgb(18, 145, 124);
+    }
+    
+}
+
+@keyframes fahad3 {
+    from{
+        background-color: #851331;
+    }
+    to{
+        background-color: rgb(139, 142, 12);
+    }
+    
+}
+
+p{
+    background-attachment: fixed;
+}
+
+.profile{
+    border-radius: 75%;
+}
+
+.name{
+    font-size: 1.3em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    text-transform: uppercase;
+    margin: 20px 0px 30px 0px;
+    text-decoration-color: darkcyan;
+    text-decoration-thickness: 3px;
+    color: cyan;
+    text-shadow: 3px 3px 5px cornflowerblue;
+}
+
+.link a{
+    background-color: rgb(125 125 125 / 25%);
+    padding: 10px 15px;
+    border-radius: 30px;
+    margin: 5px 10px;
+    text-decoration: none;
+    font-size: 1.25em;
+}
+
+.link a:hover{
+    background-color: rgb(30 30 30 / 25%);
+}
+
+.link a i{
+    margin: 5px;
+}
+
+.yt-studio{
+    color: #FF0000;
+}
+
+.insta{
+    color: #dd2a7b;
+}
+
+.about{
+    margin: 30px;
+    padding: 0px 10px;
+    font-size: 1.25em;
+    color: rgb(15, 6, 6);
+    text-decoration: underline;
+    text-decoration-color: #133b85;
+    font-weight: bold;
+    text-decoration-thickness: 3px;
+    text-indent: 45px;
+    text-shadow: 2px 2px 4px blue;
+    outline-offset: 18px;
+    border-radius: 8px;
+    outline: 2px solid blue;
+    text-align: center;
+    font-family: cursive;
+    margin-bottom: 75px;
+}
+
+.first{
+    display: flex;
+    grid-template-columns: auto auto auto;
+    padding: 25px;
+    justify-content: center;
+    gap: 5%;
+    image-resolution: 20px;
+}
+
+#a{
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+#a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+#a:hover:after{
+    width: 100%;
+}
