@@ -1,11 +1,20 @@
 *{
     box-sizing: border-box;
+    scroll-behavior: smooth;
+    /* background-color: #5f58a4; */
+    background-repeat: repeat-y;
+    object-fit: fill;
+    background-position: center center;
+    background-size: max(1600px, 100vw);
 }
 
 body{
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
+
+/* Header */
 
 .header{
     padding: 50px;
@@ -15,129 +24,21 @@ body{
     top: 0;
 }
 
-@media screen and (max-width: 430px) {
+@media only screen and (min-width: 320px) {
     .header{
-        width: 125vw;
+        width: 100vw;
     }
 }
 
-footer , nav{
-    display: flex;
-    background-color: black;
-}
-
-@media screen and (max-width: 430px) {
-    .nav{
-        width: 125vw;
+@media only screen and (max-width: 480px) {
+    .header{
+        width: 207vw;
     }
 }
 
-footer a, nav a{
-    display: block;
-    color: white;
-    text-decoration: none;
-    padding: 14px 20px;
-    float: left;
-    text-align: center;
-}
+/* Animation */
 
-main{
-    flex: 100%;
-    background-color: white;
-}
-
-section{
-    text-align: center;
-   padding-top: 40px;
-}
-
-@media screen and (max-width: 430px) {
-    .sec{
-        width: 125vw;
-    }
-}
-
-@media screen and (max-width: 430px) {
-    .sec1{
-        width: 125vw;
-    }
-}
-
-iframe{
-    padding: 0px 5px;
-}
-
-img{
-    padding: 0px 20px 0px 20px;
-}
-
-h2{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    padding-bottom: 40px;
-    color: black;
-    text-decoration: double;
-}
-
-@keyframes fahad {
-    from{
-        background-color: rgb(38, 0, 253);
-    }
-    to{
-        background-color: #1299bb;
-    }
-    
-}
-
-.img1{
-    border-radius: 50px;
-}
-
-.video span{
-    animation: fahad 2s ease-in-out 1s infinite alternate-reverse;
-    padding: 10px 55px;
-    border-radius: 20px;
-    color: white;
-    box-shadow: 10px 5px 5px rgb(179, 255, 0);
-    cursor: pointer;
-}
-
-.review span{
-    animation: fahad 2s ease-in-out 1s infinite alternate-reverse;
-    padding: 10px 55px;
-    border-radius: 20px;
-    color: white;
-    box-shadow: 10px 5px 5px rgb(179, 255, 0);
-    cursor: pointer;
-}
-
-.category span{
-    animation: fahad 2s ease-in-out 1s infinite alternate-reverse;
-    padding: 10px 55px;
-    border-radius: 20px;
-    color: white;
-    box-shadow: 10px 5px 5px rgb(179, 255, 0);
-    cursor: pointer;
-}
-
-.collection span{
-    animation: fahad 2s ease-in-out 1s infinite alternate-reverse;
-    padding: 10px 55px;
-    border-radius: 20px;
-    color: white;
-    box-shadow: 10px 5px 5px rgb(179, 255, 0);
-    cursor: pointer;
-}
-
-.founder span{
-    animation: fahad 2s ease-in-out 1s infinite alternate-reverse;
-    padding: 10px 55px;
-    border-radius: 20px;
-    color: white;
-    box-shadow: 10px 5px 5px rgb(179, 255, 0);
-    cursor: pointer;
-}
-
-p{
+.paragraph{
     animation: slidein 0.5s ease 0.2s infinite alternate both;
     background-color: #2424af;
     border-radius: 90px;
@@ -167,9 +68,238 @@ p{
     }
 }
 
+@media only screen and (min-width: 320px) {
+    .paragraph{
+        
+    }   
+}
+
+@media only screen and (max-width: 480px) {
+    .paragraph{
+        width: 160vw;
+    }
+}
+
+/* Nav Or Footer */
+
+footer , nav{
+    display: flex;
+    background-color: black !important;
+}
+
+footer a, nav a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    float: left;
+    text-align: center;
+}
+
+.nav{
+    background-color: #262626;
+}
+
+/* .nav{
+    position: sticky;
+    top: 0px;
+} */
+
 .menu-btn:hover{
     background-color: #ddd;
     color: black;
+}
+
+#a{
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+#a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+@media screen and (max-width: 700px){
+    footer , nav{
+         flex-direction: column;
+         padding: 10px 0px;
+     }
+ 
+     .flex-align-right{
+         margin-left: 0;
+     }
+}
+
+#a:hover:after{
+    width: 100%;
+}
+
+@media screen and (min-width: 320px) {
+    .nav{
+    
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .nav{
+        width: 207vw;
+    }
+}
+
+/* Arrow Key */
+
+.arrow{
+    position: relative;
+    font-size: 48px;
+    top: 51rem;
+    left: 114rem;
+}
+
+.arrow i{
+    position: fixed;
+    border: 1px solid black;
+    padding: 9px 16px;
+    border-radius: 48px;
+    color: #ddd;
+    background-color: black;
+}
+
+/* Tesla Pic */
+
+.tesla{
+    background-image: url(pics/18.jpg);
+    width: 100%;
+    height: 90vh;
+    margin-top: 96px;
+    background-repeat: no-repeat;
+    border: 1px solid black;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-size: max(1600px, 100vw);
+}
+
+@media only screen and (min-width: 320px) {
+    .tesla{
+        
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .tesla{
+        width: 207vw;
+    }
+}
+
+.tesla2{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.tesla h1{
+    color: white;
+    font-size: 96px;
+    text-align: center;
+    margin-bottom: 0px;
+    /* position: relative;
+    top: 7rem;
+    left: 7rem; */
+}
+
+.tesla h3{
+    color: white;
+    font-size: 48px;
+    margin-top: 0px;
+    /* position: relative;
+    top: 4rem;
+    right: 29.5rem; */
+}
+
+.tesla button{
+    border: none;
+    border-radius: 24px;
+    color: #ddd;
+    background-color: #ff004f;
+    cursor: pointer;
+    /* position: relative;
+    top: 12rem;
+    right: 47rem; */
+}
+
+.seperation{
+    height: 8px;
+    background-color: rgba(59, 59, 59, 0.479);
+}
+
+@media screen and (min-width: 320px) {
+    .seperation{
+        
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .seperation{
+        width: 207vw;
+    }
+}
+
+/* Interior and Specification */
+
+main{
+    flex: 100%;
+    background-color: white;
+}
+
+section{
+    text-align: center;
+    padding-top: 40px;
+}
+
+@keyframes fahad {
+    from{
+        background-color: rgb(38, 0, 253);
+    }
+    to{
+        background-color: #1299bb;
+    }
+    
+}
+
+.video span{
+    animation: fahad 2s ease-in-out 1s infinite alternate-reverse;
+    padding: 10px 55px;
+    border-radius: 20px;
+    color: white;
+    box-shadow: 10px 5px 5px rgb(179, 255, 0);
+    cursor: pointer;
+}
+
+.category span{
+    animation: fahad 2s ease-in-out 1s infinite alternate-reverse;
+    padding: 10px 55px;
+    border-radius: 20px;
+    color: white;
+    box-shadow: 10px 5px 5px rgb(179, 255, 0);
+    cursor: pointer;
+}
+
+.category{
+    margin-top: 48px;
+}
+
+.img1{
+    border-radius: 50px;
 }
 
 .carousel-cell {
@@ -186,26 +316,77 @@ p{
     max-width: 100%;
 }
 
-
-@media screen and (max-width: 700px){
-   footer , nav{
-        flex-direction: column;
-        padding: 10px 0px;
-    }
-
-    .flex-align-right{
-        margin-left: 0;
+@media screen and (min-width: 320px) {
+    .sec{
+        
     }
 }
+
+@media screen and (max-width: 480px) {
+    .sec{
+        width: 207vw;
+    }
+}
+
+/* Modication */
+
+.review span{
+    animation: fahad 2s ease-in-out 1s infinite alternate-reverse;
+    padding: 10px 55px;
+    border-radius: 20px;
+    color: white;
+    box-shadow: 10px 5px 5px rgb(179, 255, 0);
+    cursor: pointer;
+}
+
+.review{
+    margin-top: 48px;
+}
+
+iframe{
+    padding: 0px 5px;
+}
+
+h2{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding-bottom: 40px;
+    color: black;
+    text-decoration: double;
+}
+
+@media screen and (min-width: 320px) {
+    .modification{
+        
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .modification{
+        width: 207vw;
+    }
+}
+
+/* Car Price Css */
 
 h3{
     text-align: center;
-    font-family: cursive;
 }
 
-.img{
-    border-radius: 111px;
-    margin: 32px;
+.collection{
+    margin-top: 48px;
+}
+
+img{
+    padding: 0px 20px 0px 20px;
+}
+
+.collection span{
+    animation: fahad 2s ease-in-out 1s infinite alternate-reverse;
+    padding: 10px 55px;
+    border-radius: 20px;
+    color: white;
+    box-shadow: 10px 5px 5px rgb(179, 255, 0);
+    cursor: pointer;
 }
 
 .grid-container{
@@ -220,15 +401,33 @@ h3{
     align-items: center;
 }
 
+.car{
+    border: 2px solid black;
+    border-radius: 16px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.img{
+    border-radius: 111px;
+    margin: 32px;
+}
+
 .ol{
     color: blue;
-    font-style: italic;
     font-weight: 900;
     text-align: left;
     list-style-type: circle;
     cursor: pointer;
-    /* position: relative;
-    right: 110px; */
+    display: grid;
+    grid-template-columns: 80px 125px 115px 60px;
+    padding-left: 112px;
+}
+
+.div{
+    display: grid;
+    grid-template-columns: 80px 125px 115px 60px;
+    margin-top: 8px;
 }
 
 .a{
@@ -239,6 +438,8 @@ h3{
     padding: 10px 40px;
     text-decoration: none;
     animation: fahad3 2s ease-in-out 1s infinite alternate-reverse;
+    position: relative;
+    left: 73px;
 }
 
 .input{
@@ -252,6 +453,8 @@ h3{
     text-align: center;
     margin: 10px;
     border-radius: 24px;
+    position: relative;
+    left: 73px;
 }
 
 @keyframes fahad2 {
@@ -274,8 +477,31 @@ h3{
     
 }
 
-p{
-    background-attachment: fixed;
+@media screen and (min-width: 320px) {
+    .grid-container{
+        
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .grid-container{
+        width: 200vw;
+    }
+}
+
+/* Foundation */
+
+.founder span{
+    animation: fahad 2s ease-in-out 1s infinite alternate-reverse;
+    padding: 10px 55px;
+    border-radius: 20px;
+    color: white;
+    box-shadow: 10px 5px 5px rgb(179, 255, 0);
+    cursor: pointer;
+}
+
+.founder{
+    margin-top: 48px;
 }
 
 .profile{
@@ -296,16 +522,26 @@ p{
 }
 
 .link a{
-    background-color: rgb(125 125 125 / 25%);
+    /* background-color: rgb(125 125 125 / 25%); */
+    background-color: cornflowerblue;
     padding: 10px 15px;
     border-radius: 30px;
     margin: 5px 10px;
     text-decoration: none;
     font-size: 1.25em;
+    transition: transforms 0.25s;
 }
 
 .link a:hover{
-    background-color: rgb(30 30 30 / 25%);
+    background-color: #133b85;
+}
+
+.link i{
+    transition: transform 0.25s;
+}
+
+.link i:hover{
+    transform: translateY(-10px);
 }
 
 .link a i{
@@ -339,32 +575,191 @@ p{
     margin-bottom: 75px;
 }
 
-.first{
+@media screen and (min-width: 320px) {
+    .foundation{
+        
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .foundation{
+        width: 200vw;
+    }
+}
+
+/* Review */
+
+.review-1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 24px 24px;
+    gap: 24px;
+    margin: 24px;
+}
+
+.review-1 p{
+    font-size: 24px;
+    font-weight: 600;
+    margin-left: 16px;
+    color: white;
+}
+
+.review-1 span{
+    border: 1px solid white;
+    border-radius: 12px;
+    height: 400px;
+    width: 400px;
+    background-color: #262626;
+}
+
+.review-1 span i{
+    color: yellow;
+    font-size: 36px;
+    text-align: center;
+    padding: 0px 3px;
+    margin-left: 12px;
+}
+
+@media screen and (min-width: 320px) {
+    .review-1{
+        
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .review-1{
+        width: 200vw;
+        justify-content: center;
+    }
+}
+
+/* Contact Css */
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-left: 32px;
+}
+
+.contact-left{
+    flex-basis: 35%;
+}
+
+.contact-left .paragraph{
+    margin-top: 30px;
+}
+
+.contact-left p i{
+    color: #ff004f;
+    margin-right: 15px;
+    font-size: 20px;
+}
+
+.sub-title{
+    font-size: 60px;
+    font-weight: 600;
+    color: black;
+}
+
+.social-icons{
+    margin-top: 30px;
+}
+
+.social-icon a i{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #262626;
+    display: inline-block;
+    margin-top: 25px;
+    transition: transform 0.5s;
+}
+
+.social-icon a i:hover{
+    color: #ff004f;
+    transform: translateY(-5px);
+}
+
+.btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #ff004f;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff;
+    transition: background 0.5s;
+}
+
+.btn:hover{
+    background: #ff004f;
+}
+
+.btn2{
+    display: inline-block;
+    background: #ff004f;
+}
+
+.contact-right{
+    flex-basis: 60%;
+    margin-right: 88px;
+}
+
+.contact-right form{
+    width: 100%;
+}
+
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+
+form .btn2{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 320px) {
+    #contact{
+        
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #contact{
+        width: 207vw;
+    }
+}
+
+@media screen and (min-width: 320px) {
+    .row{
+        
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .row{
+        justify-content: center;
+    }
+}
+
+/* .first{
     display: flex;
     grid-template-columns: auto auto auto;
     padding: 25px;
     justify-content: center;
     gap: 5%;
     image-resolution: 20px;
-}
-
-#a{
-    text-decoration: none;
-    font-size: 18px;
-    position: relative;
-}
-
-#a::after{
-    content: '';
-    width: 0;
-    height: 3px;
-    background: #ff004f;
-    position: absolute;
-    left: 0;
-    bottom: -6px;
-    transition: 0.5s;
-}
-
-#a:hover:after{
-    width: 100%;
-}
+} */
