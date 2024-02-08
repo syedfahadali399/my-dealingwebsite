@@ -24,15 +24,21 @@ body{
     top: 0;
 }
 
-@media only screen and (min-width: 320px) {
+@media only screen and (max-width: 768px) {
     .header{
-        width: 100vw;
+        width: 147vw;
     }
 }
 
 @media only screen and (max-width: 480px) {
     .header{
         width: 207vw;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .header{
+        width: 388vw;
     }
 }
 
@@ -68,15 +74,21 @@ body{
     }
 }
 
-@media only screen and (min-width: 320px) {
+@media only screen and (max-width: 768px) {
     .paragraph{
-        
+        width: 100vw;
     }   
 }
 
 @media only screen and (max-width: 480px) {
     .paragraph{
         width: 160vw;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .paragraph{
+        width: 324vw;
     }
 }
 
@@ -142,15 +154,21 @@ footer a, nav a{
     width: 100%;
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (max-width: 768px) {
     .nav{
-    
+        width: 147vw;
     }
 }
 
 @media screen and (max-width: 480px) {
     .nav{
         width: 207vw;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .nav{
+        width: 388vw;
     }
 }
 
@@ -189,15 +207,27 @@ footer a, nav a{
     background-size: max(1600px, 100vw);
 }
 
-@media only screen and (min-width: 320px) {
+@media only screen and (max-width: 768px) {
     .tesla{
-        
+        width: 147vw;
     }
 }
 
 @media only screen and (max-width: 480px) {
     .tesla{
         width: 207vw;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .tesla{
+        width: 388vw;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    #button{
+        margin-top: -33px;
     }
 }
 
@@ -242,15 +272,21 @@ footer a, nav a{
     background-color: rgba(59, 59, 59, 0.479);
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (max-width: 768px) {
     .seperation{
-        
+        width: 147vw;
     }
 }
 
 @media screen and (max-width: 480px) {
     .seperation{
         width: 207vw;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .seperation{
+        width: 388vw;
     }
 }
 
@@ -316,15 +352,21 @@ section{
     max-width: 100%;
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (max-width: 768px) {
     .sec{
-        
+        width: 147vw;
     }
 }
 
 @media screen and (max-width: 480px) {
     .sec{
         width: 207vw;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .sec{
+        width: 388vw;
     }
 }
 
@@ -354,15 +396,21 @@ h2{
     text-decoration: double;
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (max-width: 768px) {
     .modification{
-        
+        width: 147vw;
     }
 }
 
 @media screen and (max-width: 480px) {
     .modification{
         width: 207vw;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .modification{
+        width: 388vw;
     }
 }
 
@@ -392,7 +440,7 @@ img{
 .grid-container{
     /* display: grid;
     grid-template-columns: auto auto auto; */
-    padding: 25px;
+    padding: 6px;
     justify-content: center;
     gap: 5%;
     display: flex;
@@ -477,15 +525,21 @@ img{
     
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (max-width: 768px) {
     .grid-container{
-        
+        width: 147vw;
     }
 }
 
 @media screen and (max-width: 480px) {
     .grid-container{
         width: 200vw;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .grid-container{
+        width: 388vw;
     }
 }
 
@@ -575,15 +629,21 @@ img{
     margin-bottom: 75px;
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (max-width: 768px) {
     .foundation{
-        
+        width: 147vw;
     }
 }
 
 @media screen and (max-width: 480px) {
     .foundation{
         width: 200vw;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .foundation{
+        width: 388vw;
     }
 }
 
@@ -621,15 +681,23 @@ img{
     margin-left: 12px;
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (max-width: 768px) {
     .review-1{
-        
+        width: 141vw;
+        justify-content: center;
     }
 }
 
 @media screen and (max-width: 480px) {
     .review-1{
         width: 200vw;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .review-1{
+        width: 388vw;
         justify-content: center;
     }
 }
@@ -731,9 +799,9 @@ form .btn2{
     cursor: pointer;
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (max-width: 768px) {
     #contact{
-        
+        width: 147vw;
     }
 }
 
@@ -743,13 +811,25 @@ form .btn2{
     }
 }
 
-@media screen and (min-width: 320px) {
+@media only screen and (max-width: 320px) {
+    #contact{
+        width: 388vw;
+    }
+}
+
+@media screen and (max-width: 768px) {
     .row{
-        
+        justify-content: center;
     }
 }
 
 @media screen and (max-width: 480px) {
+    .row{
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 320px) {
     .row{
         justify-content: center;
     }
